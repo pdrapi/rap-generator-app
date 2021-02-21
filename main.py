@@ -16,40 +16,66 @@ class UI(Screen, MDBoxLayout):
         super(UI, self).__init__(**kwargs)
 
         self.label = MDLabel(
-            text='Lorem Ipsum Dolor',
+            text='Rap Lyrics Generator',
+            halign='center',
+            font_style='H5',
+            pos_hint={'center_x': 0.5, 'center_y': 0.95}
+        )
+        self.label_word = MDLabel(
+            text='Type in one word for lyric generator',
+            font_style='Overline',
             pos_hint={'center_x': 0.5, 'center_y': 0.9}
         )
-
         self.word = MDTextField(
-            hint_text='word',
+            hint_text='Type the word here',
+            helper_text="This will disappear when you click off",
+            helper_text_mode="on_focus",
+            pos_hint={'center_x': 0.5, 'center_y': 0.85}
+        )
+        self.label_temp = MDLabel(
+            text='Type in a float between 0.1 and 2. This will determine how random the text will be. 0.1 = least random, 2 = most random.',
+            font_style='Overline',
             pos_hint={'center_x': 0.5, 'center_y': 0.8}
         )
-
         self.temp = MDTextField(
             hint_text='temp',
-            pos_hint={'center_x': 0.5, 'center_y': 0.7}
+            helper_text="This will disappear when you click off",
+            helper_text_mode="on_focus",
+            pos_hint={'center_x': 0.5, 'center_y': 0.75}
         )
-
+        self.label_num = MDLabel(
+            text='Type in a number of characters you want to generate. The limit is 1000.',
+            font_style='Overline',
+            pos_hint={'center_x': 0.5, 'center_y': 0.70}
+        )
         self.num = MDTextField(
             hint_text='num',
-            pos_hint={'center_x': 0.5, 'center_y': 0.6}
+            helper_text="This will disappear when you click off",
+            helper_text_mode="on_focus",
+            pos_hint={'center_x': 0.5, 'center_y': 0.65}
         )
 
         self.generate = MDRectangleFlatButton(
-            text='generate lyrics',
-            pos_hint={'center_x': 0.5, 'center_y': 0.5}
+            text='Generate lyrics',
+            pos_hint={'center_x': 0.5, 'center_y': 0.6}
+
         )
         self.generate.bind(on_press=self.on_generate_press)
 
         self.res_label = MDLabel(
-            text='Lorem Ipsum Dolor',
-            pos_hint={'center_x': 0.5, 'center_y': 0.2},
+            text='Here you will see your lyrics',
+            font_style="Overline",
+            halign="center",
+            pos_hint={'center_x': 0.5, 'center_y': 0.25},
             size_hint=[1.0, None],
         )
 
         self.add_widget(self.label)
+        self.add_widget(self.label_word)
         self.add_widget(self.word)
+        self.add_widget(self.label_temp)
         self.add_widget(self.temp)
+        self.add_widget(self.label_num)
         self.add_widget(self.num)
         self.add_widget(self.generate)
         self.add_widget(self.res_label)
