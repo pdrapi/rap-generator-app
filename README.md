@@ -2,7 +2,7 @@
 
 This is a simple Kivy app that takes input from the user: starting word, temperature & number of characters and generates unique rap lyrics.
 
-Kudos to kvd-overlord for helping us set up the project dependecies using poetry!
+Kudos to kbd-overlord for helping us set up the project dependecies using poetry!
 
 # Setting up the project - Mac OS
 
