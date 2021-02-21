@@ -1,4 +1,3 @@
-
 import logging
 from kivymd.app import MDApp
 from kivy.uix.widget import Widget
@@ -10,7 +9,7 @@ from kivymd.uix.button import MDRectangleFlatButton
 from ml_util import MLUtil
 import logging
 
-
+## Creates main screen along with the widgets
 class UI(Screen, MDBoxLayout):
     def __init__(self, **kwargs):
         super(UI, self).__init__(**kwargs)
@@ -79,7 +78,8 @@ class UI(Screen, MDBoxLayout):
         self.add_widget(self.num)
         self.add_widget(self.generate)
         self.add_widget(self.res_label)
-
+    
+    # takes input from the user and calls generate_text()
     def on_generate_press(self, instance):
         num_generate = self.num.text
         temperature = self.temp.text
@@ -92,7 +92,7 @@ class UI(Screen, MDBoxLayout):
 
         self.res_label.text = gen_res
 
-
+#Builds the app
 class MyApp(MDApp):
 
     def build(self):
