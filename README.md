@@ -73,5 +73,5 @@ This is a simple Kivy app that takes input from the user: starting word, tempera
 #### Inside the shell now type
 ```poetry run python main.py```
 
-You can now type start_string, temperature, number_of_chars and generate your own lyrics!
+You can now type starting word, temperature, number of characters and generate your own rap lyrics!
 
