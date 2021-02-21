@@ -3,14 +3,14 @@
 This is a simple Kivy app that takes input from the user: starting word, temperature & number of characters and generates unique rap lyrics.
 
 
-### Setting up the project - Mac OS
+# Setting up the project - Mac OS
 
 Install pyenv build dependencies.
 
-# Xcode Command Line Tools
+### Xcode Command Line Tools
 ```xcode-select --install```
 
-# Other dependencies
+### Other dependencies
 ```brew install openssl readline sqlite3 xz zlib```
 
 Install pyenv with Homebrew.
@@ -30,39 +30,39 @@ Clone the repository.
 
 Set a local version for Python (for current directory only).
 
-# Set version
+### Set version
 ```pyenv local 3.7.6```
 
-# Check version
+### Check version
 ```pyenv version```
 
 Install poetry via curl.
 
-# Install
+### Install
 ```curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -```
 
-# Verify
+### Verify
 ```poetry --version```
 
 Install a pre-existing poetry project with dependencies.
 
-# Navigate to project folder
+### Go to project folder
 ```cd rap-generator-app```
 
-# Install poetry project
+### Install poetry project
 ```poetry install```
 
 If you get an error that python versions are not compatible, run this command
 ```poetry env use ~/.pyenv/shims/python3.7```
-and then:
+and then
 ```poetry update```
 
 Run main.py script to verify that setup is complete.
 
-# Start a poetry shell
+### Run a poetry shell
 ```poetry shell```
 
-# Inside the shell now
+### Inside the shell now type
 ```poetry run python main.py```
 
 You can now type start_string, temperature, number_of_chars and generate your own lyrics!
