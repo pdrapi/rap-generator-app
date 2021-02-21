@@ -11,17 +11,19 @@ Install pyenv build dependencies.
 ```xcode-select --install```
 
 ### Other dependencies
+
 ```brew install openssl readline sqlite3 xz zlib```
 
-Install pyenv with Homebrew.
-```brew update```
-```brew install pyenv```
+### Install pyenv with Homebrew.
 
-Install Python 3.7.6
+```brew update
+brew install pyenv```
+
+### Install Python 3.7.6
 
 ```pyenv install 3.7.6```
 
-Clone the repository.
+### Clone the repository.
 
 ```cd [directory of the project]```
 ```git clone [this repository clone link]```
