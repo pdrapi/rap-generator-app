@@ -16,8 +16,8 @@ Install pyenv build dependencies.
 
 ### Install pyenv with Homebrew.
 
-```brew update
-brew install pyenv```
+```brew update ``` 
+```brew install pyenv```
 
 ### Install Python 3.7.6
 
