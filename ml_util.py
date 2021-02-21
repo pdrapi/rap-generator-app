@@ -6,15 +6,16 @@ import time
 import json
 import pandas
 
-
 class MLUtil():
+    #Class with ML functions to generate lyrics with the use of pre-trained model
     char2idx = None
     idx2char = None
 
     def __init__(self):
         self.prep_ml()
-
+        
     def prep_ml(self):
+        #opening needed files/dicts for the ML model to work
         logging.info("Initializing ML prep")
 
         with open('char2idx.json', 'r') as f:
@@ -34,6 +35,7 @@ class MLUtil():
         logging.info("ML prep completed")
 
     def generate_text(self, num_generate, temperature, start_string):
+        # predicts next letters based on above variables & predefined model
         num = int(num_generate)
         temp = float(temperature)
         word = start_string
