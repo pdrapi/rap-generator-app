@@ -56,6 +56,8 @@ Kudos to kbd-overlord for helping us set up the project dependecies using poetry
 #### If you get an error that python versions are not compatible, run this command
 
 ```poetry env use ~/.pyenv/shims/python3.7```
+and now try again with
+```poetry install```
 
 #### and then
 
