@@ -50,9 +50,7 @@ Kudos to kbd-overlord for helping us set up the project dependecies using poetry
 ```poetry --version```
 
 
-##### Install a pre-existing poetry project with dependencies.
-
-#### Install poetry project inside the project folder 'rap-generator-app'
+#### Install a pre-existing poetry project inside the project folder 'rap-generator-app'
 ```poetry install```
 
 #### If you get an error that python versions are not compatible, run this command
