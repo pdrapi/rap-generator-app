@@ -8,6 +8,7 @@ import pandas
 
 class MLUtil():
     #Class with ML functions to generate lyrics with the use of pre-trained model
+    
     char2idx = None
     idx2char = None
 
@@ -16,6 +17,7 @@ class MLUtil():
         
     def prep_ml(self):
         #opening needed files/dicts for the ML model to work
+        
         logging.info("Initializing ML prep")
 
         with open('char2idx.json', 'r') as f:
