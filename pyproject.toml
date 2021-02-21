@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "rap-lyrics"
+version = "0.1.0"
+description = ""
+authors = ["Piotr <38651@kozminski.edu.pl>"]
+
+[tool.poetry.dependencies]
+python = "3.7.6"
+tensorflow = "2.2.0"
+numpy = "^1.20.1"
+pandas = "^1.2.2"
+Kivy = "^2.0.0"
+kivymd = "^0.104.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+autopep8 = "^1.5.5"
+pylint = "^2.6.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
