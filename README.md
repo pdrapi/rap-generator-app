@@ -27,6 +27,7 @@ Install pyenv build dependencies.
 ### Clone the repository.
 
 ```cd [directory of the project]```
+
 ```git clone [this repository clone link]```
 
 ```cd rap-generator-app```
