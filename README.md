@@ -32,7 +32,7 @@ This is a simple Kivy app that takes input from the user: starting word, tempera
 
 ```cd rap-generator-app```
 
-#### Set a local version for Python (for current directory only).
+### Set a local version for Python (for current directory only).
 
 #### Set version
 ```pyenv local 3.7.6```
