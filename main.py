@@ -10,7 +10,7 @@ from ml_util import MLUtil
 import logging
 
 class UI(Screen, MDBoxLayout):
-    ## Creates main screen along with the widgets
+    # Creates main screen along with the widgets
     
     def __init__(self, **kwargs):
         super(UI, self).__init__(**kwargs)
@@ -81,7 +81,7 @@ class UI(Screen, MDBoxLayout):
         self.add_widget(self.res_label)
     
     def on_generate_press(self, instance):
-        # takes input from the user and calls generate_text()
+        # Takes input from the user and calls generate_text()
        
         num_generate = self.num.text
         temperature = self.temp.text
