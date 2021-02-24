@@ -75,3 +75,8 @@ and now try again with
 
 You can now type starting word, temperature, number of characters and generate your own rap lyrics!
 
+**Authors:**
+
+Piotr Drapinski & Wiktor Radwan & Maciej Glazek
+
+
